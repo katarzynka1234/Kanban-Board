@@ -24,16 +24,6 @@ $('.create-column')
 	});
 	
 function initSortable() {
-	// var self = this;
-	// $.ajax({
-	// 	url: baseUrl + '/card' +self.id,
-	// 	method: 'PUT',
-	// 	data: {
-
-	// 		name: cardName
-	// 		bootcamp_kanban_column_id: self.id
-	// 	},
-	// })
     $('.card-list').sortable({
       connectWith: '.card-list',
       placeholder: 'card-placeholder'
