@@ -6,14 +6,14 @@ var myHeaders = {
 };
 
 $.ajaxSetup({
-	headers: myHeaders
+    headers: myHeaders
 });
 
 $.ajax({
     url: baseUrl + '/board',
     method: 'GET',
-    success: function(response) {
-      setupColumns(response.columns);
+    success: function (response) {
+        setupColumns(response.columns);
     }
 });
 
@@ -23,14 +23,14 @@ function setupColumns(columns) {
         board.createColumn(col);
         setupCards(col, column.cards);
     });
-};
+}
 
 function setupCards(col, cards) {
-	cards.forEach(function (card) {
+    cards.forEach(function (card) {
         var cardObj = new Card(card.id, card.name, card.bootcamp_kanban_column_id);
-    	col.createCard(cardObj);
-  	});
-};
+        col.createCard(cardObj);
+    });
+}
 
 //Przy zapytaniu do serwera ta funkcja zostaje usunięta
 // function randomString() {

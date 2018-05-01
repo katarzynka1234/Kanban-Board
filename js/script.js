@@ -9,14 +9,14 @@ $(document).ready(function () {
             str += chars[Math.floor(Math.random() * chars.length)];
         }
         return str;
-    };
+    }
     //wtyczka jqueryUI sortable - przenoszenie elementów    
     function initSortable() {
         $('.card-list').sortable({
             connectWith: '.card-list',
             placeholder: 'card-placeholder'
         }).disableSelection();
-    };
+    }
 
     //KANBAN
     var board = {
@@ -67,7 +67,7 @@ $(document).ready(function () {
                 .append(columnCardList);
             return column;
         }
-    };
+    }
 
     Column.prototype = {
         createCard: function (card) {
@@ -100,7 +100,7 @@ $(document).ready(function () {
             card.append(cardDescription);
             return card;
         }
-    };
+    }
 
     Card.prototype = {
         removeCard: function() {
