@@ -36,8 +36,8 @@ function Column(id, name) {
 		});
 
 		// KONSTRUOWANIE ELEMENTU KOLUMNY
-		column.append(columnTitle)
-			.append(columnDelete)
+		column.append(columnDelete)
+			.append(columnTitle)
 			.append(columnAddCard)
 			.append(columnCardList);
 		return column;

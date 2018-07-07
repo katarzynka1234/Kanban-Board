@@ -1,113 +1,132 @@
+@import 'global_variables';
 @import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,700');
 
 body {
     margin: 0 auto;
-    padding: 0;
-    background-color: #808e9b;    
+    padding: 0;      
 }
 
-
-
-.board {
-    text-align: center;
-    
-    h1 {
-        font-family: 'Ubuntu', sans-serif;
-        font-size: 50px;
-        color: #fff;
-        margin: 0;
-        padding: 20px;
-        text-transform: uppercase;
-    }
-
-    .column-container {
-        margin-top: 30px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-
-    .column {
-        margin: 0 10px;
-        h2 {
-            font-family: "Ubuntu", sans-serif;
-            font-size: 30px;
-            color: #fff;
-            text-transform: uppercase;
+.application-box {
+    background-image: url(../images/beverage-blank-break-997719.jpg);
+    background-size: cover;
+    height: 100vh;
+    .board {
+        text-align: center;    
+        h1 {
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 50px;
+            color: $header-color;
+            font-weight: 700;
             margin: 0;
-            padding-top: 20px;
-
+            padding: 20px;
+            text-transform: uppercase;
         }
-        ul {
-            list-style: none;
-            display: block;
-            padding: 0;
-            li {
-                margin: 5px 5px;
-                width: 200px;                            
-                background-color: #fff;
-                font-family: 'Ubuntu',sans-serif;
-                color: #485460;
-                font-weight: 300;
-                font-size: 15px; 
-                text-align: left; 
-                cursor: pointer;
-                &:hover {
-                    transform: scale(1.1);
-                }
-                > .btn-delete {
-                    width: 20px;
-                    height: 20px;
-                    float: right;                    
+        button.create-column {
+            width: 250px;
+            background-color: $header-color;
+            color: $white;
+        }
+        .column-container {
+            margin-top: 30px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .column {
+            margin: 10px 20px;       
+            border-radius: 5%;
+            background-color: rgba(106, 93, 104, 0.7);
+            box-shadow: 0px 0px 20px 1px rgba(5,0,4,1);
+            padding: 5px;
+            min-width: 250px;
+            h2 {
+                font-family: "Ubuntu", sans-serif;
+                font-size: 25px;
+                color: #fff;          
+                margin: 0;
+                padding-top: 20px;
+
+            }
+            ul {
+                list-style: none;
+                display: block;
+                padding: 0;
+                li {
+                    margin: 5px auto;
+                    width: 200px;                            
+                    background-color: #fff;
+                    font-family: 'Ubuntu',sans-serif;
+                    color: #485460;
+                    font-weight: 300;
+                    font-size: 15px; 
+                    text-align: left; 
+                    cursor: pointer;
                     &:hover {
-                        background-color: #808e9b;
-                        color: #fff;
-                        cursor: pointer;
+                        transform: scale(1.1);
                     }
+                    > .btn-delete {
+                        width: 20px;
+                        height: 20px;
+                        float: right;                    
+                        &:hover {
+                            background-color: #808e9b;
+                            color: #fff;
+                            cursor: pointer;
+                        }
+                    }
+                    p {
+                        margin: 0;
+                        padding: 5px 5px;
+                    }               
                 }
-                p {
-                    margin: 0;
-                    padding: 5px 5px;
-                }               
             }
         }
+        button {
+            background-color: $white;
+            border: none;
+            color: $header-color;
+            width: 120px;
+            height: 30px;
+            border-radius: 5px;        
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: 700;
+            margin: 5px;
+            cursor: pointer; 
+            outline: none; 
+            &:hover {
+                transform: scale(1.1);
+            } 
+        }        
+        .btn-delete {
+            width: 30px;
+            cursor: pointer;
+            float: right;
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+        
+        .ui-sortable {
+            min-height: 80px;
+          }
+        
+        .card-placeholder {
+            border: 1px dotted #000;
+            background: none;
+            height: 25px;
+            width: 200px;
+        }
     }
-}
-
-button {
-    background-color: #fff;
-    border: none;
-    color: #808e9b;
-    width: 120px;
-    height: 30px;
-    border-radius: 15px;        
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 700;
-    margin: 5px;
-    cursor: pointer; 
-    outline: none; 
-    &:hover {
-        transform: scale(1.1);
-    } 
-}
-
-.btn-delete {
-    width: 30px;
-    cursor: pointer;
-    &:hover {
-        transform: scale(1.1);
+    .how-it-works{
+        .btn {
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        }
     }
+
 }
 
-.ui-sortable {
-    min-height: 80px;
-  }
 
-.card-placeholder {
-    border: 1px dotted #000;
-    background: none;
-    height: 25px;
-    width: 200px;
-}
 

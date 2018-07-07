@@ -1,31 +1,60 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
-        <meta charset="UTF-8">
-        <title>My Kanban board</title>
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <title>My Kanban board</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
 
-    <body>
+<body>
+    <div class="application-box">
         <div id="board" class="board">
             <h1>Kanban board</h1>
-            <button class="create-column">NEW COLUMN</button>
+            <button class="create-column">NOWA KOLUMNA</button>
             <div class="column-container"></div>
         </div>
-        
-       
-        <script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0="
-            crossorigin="anonymous"></script>
-        <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js" integrity="sha256-xNjb53/rY+WmG+4L6tTl9m6PpqknWZvRt0rO1SRnJzw="
-            crossorigin="anonymous"></script>
 
-<!--- Wyłączony script:
+        <div class="how-it-works">
+            <!-- Button modal -->
+            <button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#myModal">
+                Jak to działa?
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" tabindex="10" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <h4 class="modal-title" id="myModalLabel">Jak działa tablica Kanban?</h4>
+                        </div>
+                        <div class="modal-body">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0="
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js" integrity="sha256-xNjb53/rY+WmG+4L6tTl9m6PpqknWZvRt0rO1SRnJzw="
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!--- Wyłączony script:
         <script type="text/javascript" src="js/script.js"></script> -->
-        <script type="text/javascript" src="js/Column.js"></script>
-        <script type="text/javascript" src="js/Card.js"></script>
-        <script type="text/javascript" src="js/Board.js"></script>
-        <script type="text/javascript" src="js/App.js"></script>
-    </body>
+    <script type="text/javascript" src="js/Column.js"></script>
+    <script type="text/javascript" src="js/Card.js"></script>
+    <script type="text/javascript" src="js/Board.js"></script>
+    <script type="text/javascript" src="js/App.js"></script>
+</body>
 
 </html>

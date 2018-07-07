@@ -2,55 +2,67 @@
 body {
   margin: 0 auto;
   padding: 0;
-  background-color: #808e9b;
 }
 
-.board {
+.application-box {
+  background-image: url(../images/beverage-blank-break-997719.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+
+.application-box .board {
   text-align: center;
 }
 
-.board h1 {
+.application-box .board h1 {
   font-family: 'Ubuntu', sans-serif;
   font-size: 50px;
-  color: #fff;
+  color: #6b5d68;
+  font-weight: 700;
   margin: 0;
   padding: 20px;
   text-transform: uppercase;
 }
 
-.board .column-container {
-  margin-top: 30px;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: row;
-      flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.board .column {
-  margin: 0 10px;
-}
-
-.board .column h2 {
-  font-family: "Ubuntu", sans-serif;
-  font-size: 30px;
+.application-box .board button.create-column {
+  width: 250px;
+  background-color: #6b5d68;
   color: #fff;
-  text-transform: uppercase;
+}
+
+.application-box .board .column-container {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.application-box .board .column {
+  margin: 10px 20px;
+  border-radius: 5%;
+  background-color: rgba(106, 93, 104, 0.7);
+  box-shadow: 0px 0px 20px 1px #050004;
+  padding: 5px;
+  min-width: 250px;
+}
+
+.application-box .board .column h2 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 25px;
+  color: #fff;
   margin: 0;
   padding-top: 20px;
 }
 
-.board .column ul {
+.application-box .board .column ul {
   list-style: none;
   display: block;
   padding: 0;
 }
 
-.board .column ul li {
-  margin: 5px 5px;
+.application-box .board .column ul li {
+  margin: 5px auto;
   width: 200px;
   background-color: #fff;
   font-family: 'Ubuntu',sans-serif;
@@ -61,34 +73,34 @@ body {
   cursor: pointer;
 }
 
-.board .column ul li:hover {
+.application-box .board .column ul li:hover {
   transform: scale(1.1);
 }
 
-.board .column ul li > .btn-delete {
+.application-box .board .column ul li > .btn-delete {
   width: 20px;
   height: 20px;
   float: right;
 }
 
-.board .column ul li > .btn-delete:hover {
+.application-box .board .column ul li > .btn-delete:hover {
   background-color: #808e9b;
   color: #fff;
   cursor: pointer;
 }
 
-.board .column ul li p {
+.application-box .board .column ul li p {
   margin: 0;
   padding: 5px 5px;
 }
 
-button {
+.application-box .board button {
   background-color: #fff;
   border: none;
-  color: #808e9b;
+  color: #6b5d68;
   width: 120px;
   height: 30px;
-  border-radius: 15px;
+  border-radius: 5px;
   font-family: 'Ubuntu', sans-serif;
   font-weight: 700;
   margin: 5px;
@@ -96,27 +108,35 @@ button {
   outline: none;
 }
 
-button:hover {
+.application-box .board button:hover {
   transform: scale(1.1);
 }
 
-.btn-delete {
+.application-box .board .btn-delete {
   width: 30px;
   cursor: pointer;
+  float: right;
 }
 
-.btn-delete:hover {
+.application-box .board .btn-delete:hover {
   transform: scale(1.1);
 }
 
-.ui-sortable {
+.application-box .board .ui-sortable {
   min-height: 80px;
 }
 
-.card-placeholder {
+.application-box .board .card-placeholder {
   border: 1px dotted #000;
   background: none;
   height: 25px;
   width: 200px;
 }
+
+.application-box .how-it-works .btn {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+
 /*# sourceMappingURL=style.css.map */
