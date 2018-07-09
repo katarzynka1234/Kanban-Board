@@ -3,13 +3,16 @@
 
 body {
     margin: 0 auto;
-    padding: 0;      
+    padding: 0;   
+    height: 100vh;
+    background-image: url(../images/beverage-blank-break-997719.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: left bottom;   
 }
 
 .application-box {
-    background-image: url(../images/beverage-blank-break-997719.jpg);
-    background-size: cover;
-    height: 100vh;
+
     .board {
         text-align: center;    
         h1 {

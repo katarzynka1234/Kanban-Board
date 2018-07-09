@@ -2,12 +2,11 @@
 body {
   margin: 0 auto;
   padding: 0;
-}
-
-.application-box {
+  height: 100vh;
   background-image: url(../images/beverage-blank-break-997719.jpg);
   background-size: cover;
-  height: 100vh;
+  background-attachment: fixed;
+  background-position: left bottom;
 }
 
 .application-box .board {
@@ -32,14 +31,10 @@ body {
 
 .application-box .board .column-container {
   margin-top: 30px;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: row;
-      flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .application-box .board .column {
@@ -142,4 +137,5 @@ body {
   bottom: 10px;
   right: 10px;
 }
+
 /*# sourceMappingURL=style.css.map */
