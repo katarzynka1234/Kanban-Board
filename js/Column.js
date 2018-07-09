@@ -19,7 +19,7 @@ function Column(id, name) {
 		});
 
 		columnAddCard.click(function (event) {
-			var cardName = prompt("Enter the name of the card");
+			var cardName = prompt("Wpisz notatkę:");
 			event.preventDefault();
 			$.ajax({
 				url: baseUrl + '/card',
@@ -43,6 +43,7 @@ function Column(id, name) {
 		return column;
 	}
 }
+
 
 Column.prototype = {
 	createCard: function (card) {
