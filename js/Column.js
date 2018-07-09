@@ -10,7 +10,7 @@ function Column(id, name) {
 		var column = $('<div class="column"></div>');
 		var columnTitle = $('<h2 class="column-title">' + self.name + '</h2>');
 		var columnCardList = $('<ul class="card-list" data-id="' + self.id + '"></ul>');
-		var columnDelete = $('<button class="btn-delete">x</button>');
+		var columnDelete = $('<button class="btn-delete">X</button>');
 		var columnAddCard = $('<button class="column-add-card">Dodaj kartę</button>');
 
 		// PODPINANIE ODPOWIEDNICH ZDARZEŃ POD WĘZŁY
